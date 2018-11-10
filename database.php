@@ -1,9 +1,9 @@
 'mysql'  => [
     'driver'    => 'mysql',
-    'host'      => env('DB_HOST', 'eu-cdbr-west-02.cleardb.net'),
-    'database'  => env('DB_DATABASE', 'heroku_be7ad04a928fb7b'),
-    'username'  => env('DB_USERNAME', 'baed712db113c9'),
-    'password'  => env('DB_PASSWORD', '0d11fab1'),
+    'host'      => env('DB_HOST'),
+    'database'  => env('DB_DATABASE'),
+    'username'  => env('DB_USERNAME'),
+    'password'  => env('DB_PASSWORD'),
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
