@@ -1,9 +1,8 @@
 <?php
-//establish connection to database
-require_once('./models/dbconnect.php')
+//$pdo enthält die Datenbankverbindung
  
 class User {
-   // Klasse zur Abbildung der Nutzer
+   // Klasse zur Abbildung eurer Benutzer
  
    public static function newUser($email, $vorname, $nachname, $passwort) {
    }
@@ -19,19 +18,13 @@ class User {
    }
  
 }
-
-class CustomerSupplier {
-    // Klasse zur Abbildung der Kunden und Lieferanten
-}
-    
-    
-    
+ 
 class Product {
-   // Klasse zur Darstellung der Waren
+   // Klasse zur Darstellung von Produkten im Online-Shop ähnlich wie oben
    //...
 }
  
-class Order {
+class ProductOrder {
    // Klasse zur Darstellung neuer Produktbestellungen
    public function __constructor(User $user) {
    }
