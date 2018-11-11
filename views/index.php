@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="views/vorlage.css" />
+    <link rel="stylesheet" type="text/css" href="vorlage.css" />
 		<title>Titel</title>
 	</head>
 	<body>
