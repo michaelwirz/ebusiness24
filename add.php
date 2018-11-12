@@ -5,7 +5,7 @@
             <p class="card-category">Produktname, Einkaufs- und Verkaufspreis sind erforderlich</p>
         </div>
         <div class="card-body">
-            <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form role="form" method="post" action="add.php">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group" >
