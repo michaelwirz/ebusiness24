@@ -1,6 +1,6 @@
 <div class="col-md-5">
     <div class="card">
-        <div class="card-header card-header-primary">
+        <div class="card-header card-header-danger">
             <h4 class="card-title">Warentyp löschen</h4>
             <p class="card-category">Achtung! Kann nicht rückgängig gemacht werden!</p>
         </div>
@@ -13,7 +13,7 @@
                     <option value="3">Three</option>
                 </select>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Löschen</button>
+                    <button class="btn btn-outline-danger" type="button">Löschen</button>
                 </div>
             </div>
         </div>

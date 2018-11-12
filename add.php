@@ -1,6 +1,6 @@
 <div class="col-md-6">
     <div class="card">
-        <div class="card-header card-header-primary">
+        <div class="card-header card-header-success">
             <h4 class="card-title">Neuen Warentyp anlegen</h4>
             <p class="card-category">Geben Sie den Produktnamen, den Einkaufs- sowie den Verkaufspreis an. ID wird automatisch vergeben.</p>
         </div>
