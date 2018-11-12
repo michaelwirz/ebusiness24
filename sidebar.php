@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="#0">
+                        <a class="nav-link" href="orders.php">
                           <i class="material-icons">account_box</i>
                           <p>Kundenübersicht</p>
                         </a>

@@ -30,8 +30,8 @@
           <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#pablo">
-                  <i class="material-icons">help_outline</i> IT-Kontaktieren
+                <a class="nav-link" href="mailto:mail@nicolaskatte.de">
+                  <i class="material-icons">mail_outline</i> IT-Kontaktieren
                 </a>
               </li>
               <!-- your navbar here -->
