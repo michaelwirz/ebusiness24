@@ -3,7 +3,8 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-<div class="logo">
+<div class="sidebar" data-color="azure" data-background-color="white">
+    <div class="logo">
         <a href="" class="simple-text logo-normal">
           KEA Warenhaltung
         </a>
@@ -47,3 +48,4 @@
                         </a>
                     </li>
             </ul>
+    </div>
