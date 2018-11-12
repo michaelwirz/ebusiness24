@@ -8,7 +8,7 @@ function db_connect() {
         // besteht die Verbindung schon?
     if(!isset($connection)) {
              // lade die Umgebungsvariablen in die lokale Variable config
-        $config = array getenv(); 
+        $config = getenv(); 
         $connection = mysqli_connect($config['DATABASE_HOST'],$config['DB_USERNAME'],$config['DB_PASSWORD'],$config['DB_DATABASE']);
     }
 
