@@ -1,7 +1,7 @@
 <?php
 require_once('db_connect.php');
 $sql = "SELECT Waren_ID, Name, Einkaufspreis, Verkaufspreis FROM ware";
-$result = $conn->query($sql);
+$result = $connection->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {

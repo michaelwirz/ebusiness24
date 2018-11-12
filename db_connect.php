@@ -9,7 +9,7 @@ function db_connect() {
     if(!isset($connection)) {
              // lade die Umgebungsvariablen in die lokale Variable config
         $config = getenv (); 
-        $connection = mysqli_connect($config['DATABASE_HOST'],$config['DB_USERNAME'],$config['DB_PASSWORD'],$config['DB_DATABASE']);
+        $connection = mysqli_connect($config['DB_HOST'],$config['DB_USERNAME'],$config['DB_PASSWORD'],$config['DB_DATABASE']);
     }
 
         // Verbindungsaufbau gescheitert?
