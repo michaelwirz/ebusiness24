@@ -51,5 +51,6 @@
     $name = $_POST['Name']; 
     $einkaufspreis = $_POST['Einkaufspreis'];
     $verkaufspreis = $_POST['Verkaufspreis'];
-    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) VALUES ('$name', '$einkaufspreis', '$verkaufspreis')"; 
+    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
+    }
 ?>
