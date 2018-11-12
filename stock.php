@@ -7,8 +7,7 @@
 //  3. Spalte: Verkaufspreis
 -->
 
-<?php include 'head.php';
-require_once('db_connect.php');?>
+<?php include 'head.php';?>
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="azure" data-background-color="white">

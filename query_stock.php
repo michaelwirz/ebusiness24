@@ -1,5 +1,5 @@
 <?php
-
+require_once('db_connect.php');
 $sql = "SELECT Waren_ID, Name, Einkaufspreis, Verkaufspreis FROM ware";
 $result = $connection->query($sql);
 
