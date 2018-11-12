@@ -13,7 +13,7 @@
                     <option value="3">Three</option>
                 </select>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-danger" type="button">Löschen</button>
+                    <button class="btn btn-success input-group-btn" type="button">Löschen</button>
                 </div>
             </div>
         </div>
