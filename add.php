@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success pull-right">Eintragen</button>
+                <button type="submit" class="btn btn-info pull-right">Eintragen</button>
                 <div class="clearfix"></div>
             </form>
         </div>
