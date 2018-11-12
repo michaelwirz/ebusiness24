@@ -9,4 +9,5 @@
     <div class="main-panel">
       <?php include 'navbar.php'; ?>
     <?php include 'add.php'; ?>
+    <?php include 'remove.php'; ?>
     <div><?php include 'footer.php' ?></div>
