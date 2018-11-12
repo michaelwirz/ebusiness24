@@ -1,4 +1,7 @@
-<?php include 'head.php'?>
+<?php 
+include 'head.php';
+$page = "foo";
+?>
 
 <body class="">
   <div class="wrapper ">

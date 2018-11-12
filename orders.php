@@ -1,4 +1,7 @@
-<?php include 'head.php'?>
+<?php 
+include 'head.php';
+$page = "Kundenübersicht";
+?>
 
 <body class="">
   <div class="wrapper ">
