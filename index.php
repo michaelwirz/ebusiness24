@@ -17,7 +17,7 @@
 				<h1>Ueberschrift</h1>
 			</div>
 			<div id="menu_left">
-			   Navigation...	
+			   <?php include(navigation.php); ?>	
 			</div>		
 			<div id="content">
 			   Inhalt...     
