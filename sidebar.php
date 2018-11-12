@@ -11,7 +11,7 @@
       <div class="sidebar-wrapper">
           <ul class="nav">
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="#0">
+                        <a class="nav-link" href="dashboard.php">
                           <i class="material-icons">dashboard</i>
                           <p>Dashboard</p>
                         </a>
@@ -23,27 +23,27 @@
                         </a>
                     </li>
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="#0">
+                        <a class="nav-link" href="inward.php">
                           <i class="material-icons">input</i>
-                          <p>Wareneingang buchen</p>
+                          <p>Erfassung Wareneingang</p>
                         </a>
                     </li>
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="#0">
+                        <a class="nav-link" href="outward.php">
                           <i class="material-icons">local_shipping</i>
-                          <p>Warenausgang buchen</p>
+                          <p>Erfassung Warenausgang</p>
                         </a>
                     </li>
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="#0">
+                        <a class="nav-link" href="supplies.php">
                           <i class="material-icons">history</i>
                           <p>Bestandsänderungen</p>
                         </a>
                     </li>
                     <li class="nav-item active  ">
                         <a class="nav-link" href="#0">
-                          <i class="material-icons">receipt</i>
-                          <p>Umsatz &amp; Gewinn</p>
+                          <i class="material-icons">account_box</i>
+                          <p>Kundenübersicht</p>
                         </a>
                     </li>
             </ul>
