@@ -14,9 +14,9 @@ if (isset($_POST['submit'])) {
     WHERE Waren_ID = '$last_id'"; 
 */
     if (mysqli_query($connection, $sql)) {
-        echo "New record created successfully";
+//        echo "New record created successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+//        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
     mysqli_close($connection);
     }
     
