@@ -9,11 +9,11 @@
         </div>
         <div class="card-body">
             <div class="input-group">
-                <select class="custom-select bmd-form-group-sm" name="remove">
+                <select class="custom-select bmd-form-group-sm" name="remove" action="dashboard.php" method="post">
                     <?php include 'remove_query.php' ;?>
                 </select>
                 <div class="input-group-append">
-                    <button class="btn btn-info input-group-btn" type="button" action="dashboard.php" method="post">Löschen</button>
+                    <button class="btn btn-info input-group-btn" type="button">Löschen</button>
                 </div>
             </div>
         </div>
@@ -43,4 +43,17 @@
       <option>5</option>
     </select>
   </div>
+
+<div class="input-group"> 
+    <div class="input-group-btn">  
+        <div class="dropdown-menu"> 
+            <a class="dropdown-item" href="#">Action</a> 
+            <a class="dropdown-item" href="#">Another action</a> 
+        </div>
+<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Löschen </button>
+    </div> 
+<input class="form-control" aria-label="Text input with dropdown button"> 
+</div>
+
+
 -->
