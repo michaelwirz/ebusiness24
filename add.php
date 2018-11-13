@@ -23,19 +23,18 @@ if (isset($_POST['submit'])) {
         <div class="card-body">
             <form role="form" method="post" action="dashboard.php">
                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group" >
-                            <label class="bmd-label-floating">Produkt-ID
-                            </label>
-                            <input type="text" class="form-control" disabled>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
+                   <div class="col-md-6">
                         <div class="form-group">
                             <label class="bmd-label-floating">Produktname</label>
-                            <input type="text" required="1" class="form-control" name="Name">
+                            <input type="text" required class="form-control" name="Name">
+                        </div>
+                    </div>
+                   <div class="col-md-3">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group" >
+                            <label class="bmd-label-floating">Produkt-ID</label>
+                            <input type="text" class="form-control" placeholder="automatisch" disabled>
                         </div>
                     </div>
                 </div>
@@ -43,7 +42,7 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="bmd-label-floating">Einkaufspreis</label>
-                            <input min="0" step="0.01" value="0" placeholder="wird automatisch vergeben" required="1" type="number" class="form-control"  name="Einkaufspreis">
+                            <input min="0" step="0.01" value="0" required type="number" class="form-control"  name="Einkaufspreis">
                         </div>
                     </div>
                 </div>
@@ -51,7 +50,7 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="bmd-label-floating">Verkaufspreis</label>
-                            <input min="0" step="0.01" value="0" placeholder=" " required="1" type="number" class="form-control"  name="Verkaufspreis">
+                            <input min="0" step="0.01" value="0" required type="number" class="form-control"  name="Verkaufspreis">
                         </div>
                     </div>
                 </div>
