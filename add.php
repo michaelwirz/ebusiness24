@@ -4,8 +4,8 @@ if (isset($_POST['submit'])) {
     $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
     $verkaufspreis = (float) $_POST['Verkaufspreis'];
-    $sql= "INSERT INTO ware (Waren_ID, Name, Einkaufspreis, Verkaufspreis) 
-    VALUES ('$new_id', '$name', '$einkaufspreis', '$verkaufspreis')";
+    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
+    VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
     $last_id = mysqli_insert_id($connection);
     $new_id = $last_id -9;
     $sql= "UPDATE ware 
