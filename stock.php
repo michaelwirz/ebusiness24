@@ -48,7 +48,7 @@ echo $datum;
                           Verkaufspreis
                         </th>
                       </thead>
-                      <?php include 'query_stock.php' ?>
+                      <?php include 'stock_query.php' ?>
                     </table>
                   </div>
                 </div>
