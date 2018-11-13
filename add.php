@@ -16,14 +16,14 @@
         </div>
         <div class="card-body">
             <form role="form" method="post" action="dashboard.php">
-                <div class="row">
+               <!-- <div class="row">
                     <div class="col-md-4">
                         <div class="form-group" >
                             <label class="bmd-label-floating">Produkt-ID</label>
                             <input type="text" class="form-control" disabled>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-md-8">
                         <div class="form-group">
