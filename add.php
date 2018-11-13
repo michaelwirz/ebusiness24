@@ -1,5 +1,5 @@
 <?php
-    if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     require_once('db_connect.php');
     $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
@@ -9,7 +9,14 @@
     echo $verkaufspreis;
     $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
     VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
+    
+    if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    mysqli_close($conn);
     }
+}
 ?>
 
 <div class="col-md-6">
