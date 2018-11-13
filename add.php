@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-3">
                         <div class="form-group" >
                             <label class="bmd-label-floating">Produkt-ID</label>
-                            <input type="text" class="form-control" placeholder="automatisch" disabled>
+                            <input type="text" class="form-control" value="automatisch" disabled>
                         </div>
                     </div>
                 </div>
