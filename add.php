@@ -7,8 +7,8 @@ if (isset($_POST['submit'])) {
     echo $name;
     echo $einkaufspreis;
     echo $verkaufspreis;
-    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
-    VALUES ($name, $einkaufspreis, $verkaufspreis)";
+    $sql= "INSERT INTO ware (Waren_ID, Name, Einkaufspreis, Verkaufspreis) 
+    VALUES ('5', $name', '$einkaufspreis', '$verkaufspreis')";
     
     if (mysqli_query($connection, $sql)) {
         echo "New record created successfully";
