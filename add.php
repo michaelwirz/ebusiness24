@@ -18,6 +18,7 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($connection);
     mysqli_close($connection);
+    }
     
 }
 ?>
@@ -62,7 +63,7 @@ if (isset($_POST['submit'])) {
                         </div>
                     </div>
                 </div>
-                <input type="submit" name="submit" class="btn btn-info pull-right" vlue="HINZUFÜGEN">
+                <input type="submit" name="submit" class="btn btn-info pull-right" value="HINZUFÜGEN">
                 <div class="clearfix"></div>
             </form>
         </div>
