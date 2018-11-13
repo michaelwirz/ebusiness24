@@ -7,7 +7,8 @@
     echo $name;
     echo $einkaufspreis;
     echo $verkaufspreis;
-    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
+    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
+    VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
     }
 ?>
 
