@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" name="submit" class="btn btn-info pull-right">Eintragen</button>
+                <input type="submit" name="submit" class="btn btn-info pull-right" vlue="HINZUFÜGEN">Eintragen</input>
                 <div class="clearfix"></div>
             </form>
         </div>
