@@ -26,6 +26,7 @@ $page = "Warenbestand";
                 <div class="card-header card-header-primary">
                   <h4 class="card-title ">Warenbestände</h4>
                   <p class="card-category">Stand <?php
+date_default_timezone_set('Europe/Berlin');
 $datum = date("d.m.Y - H:i");
 echo $datum;
 ?> Uhr</p>
