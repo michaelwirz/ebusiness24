@@ -4,18 +4,13 @@ if (isset($_POST['submit'])) {
     $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
     $verkaufspreis = (float) $_POST['Verkaufspreis'];
-    echo $name;
-    echo $einkaufspreis;
-    echo $verkaufspreis;
-    $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
-    VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
-    
-    if (mysqli_query($connection, $sql)) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
-    mysqli_close($connection);
-    }
+    $sql= "INSERT INTO ware (Waren_ID, Name, Einkaufspreis, Verkaufspreis) 
+    VALUES ('$new_id', '$name', '$einkaufspreis', '$verkaufspreis')";
+    $last_id = mysqli_insert_id($connection);
+    $new_id = $last_id -9;
+    $sql= "UPDATE ware 
+    SET Waren_ID = '$new_id'
+    WHERE Waren_ID = '$last_id'";
 }
 ?>
 
@@ -27,14 +22,15 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="card-body">
             <form role="form" method="post" action="dashboard.php">
-               <!-- <div class="row">
+               <div class="row">
                     <div class="col-md-4">
                         <div class="form-group" >
-                            <label class="bmd-label-floating">Produkt-ID</label>
+                            <label class="bmd-label-floating">Produkt-ID
+                            </label>
                             <input type="text" class="form-control" disabled>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="row">
                     <div class="col-md-8">
                         <div class="form-group">

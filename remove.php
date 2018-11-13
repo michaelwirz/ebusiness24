@@ -2,15 +2,12 @@
     <div class="card">
         <div class="card-header card-header-danger">
             <h4 class="card-title">Warentyp löschen</h4>
-            <p class="card-category">Achtung! Kann nicht rückgängig gemacht werden!</p>
+            <p class="card-category">Hier kann noch ein Text hin</p>
         </div>
         <div class="card-body">
             <div class="input-group">
                 <select class="custom-select bmd-form-group-sm">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <?php include 'remove_query.php' ;?>
                 </select>
                 <div class="input-group-append">
                     <button class="btn btn-info input-group-btn" type="button">Löschen</button>
