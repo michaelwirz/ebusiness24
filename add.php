@@ -60,8 +60,10 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="bmd-label-floating">Verkaufspreis</label>
-                            <span class="input-group-addon">€</span>
-                            <input min="0" step="0.01" required type="number" class="form-control"  name="Verkaufspreis">
+                            <div class="input-group">
+                                <span class="input-group-addon">€</span>
+                                <input min="0" step="0.01" required type="number" class="form-control"  name="Verkaufspreis">
+                            </div>
                         </div>
                     </div>
                 </div>

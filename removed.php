@@ -5,6 +5,7 @@ if (isset($_POST['remove'])) {
     $sql = "SELECT * INTO ware_removed
     FROM ware
     WHERE Waren_ID = '$remove_waren_id'";
+    $sql = "DELETE FROM ware WHERE Waren_ID = '$remove_waren_id'";
     mysqli_close($connection);
 }
 ?>
