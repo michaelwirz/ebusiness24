@@ -4,6 +4,9 @@
     $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
     $verkaufspreis = (float) $_POST['Verkaufspreis'];
+    echo $name;
+    echo $einkaufspreis;
+    echo $verkaufspreis;
     $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
     }
 ?>
