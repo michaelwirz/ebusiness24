@@ -1,7 +1,7 @@
 <?php
     if (isset($_POST['submit'])) {
     require_once('db_connect.php');
-    $name = $_POST['Name']; 
+    $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
     $verkaufspreis = (float) $_POST['Verkaufspreis'];
     $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <input type="submit" name="submit" class="btn btn-info pull-right" vlue="HINZUFÜGEN">Eintragen</input>
+                <input type="submit" name="submit" class="btn btn-info pull-right" vlue="HINZUFÜGEN">
                 <div class="clearfix"></div>
             </form>
         </div>
