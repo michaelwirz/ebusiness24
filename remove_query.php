@@ -4,10 +4,9 @@ $sql = "SELECT Waren_ID, Name FROM ware";
 $result = $connection->query($sql);
 
 if ($result->num_rows > 0) {
-    $i=0;
     echo "<option selected>Warentyp auswählen...</option>\n";
     while($row = $result->fetch_assoc()) {
-        echo '<option value="' . $i . '">(' . $row["Waren_ID"] . ') ' . $row["Name"] . '</option>';
+        echo '<option value="' . $row["Waren_ID"] . '">(' . $row["Waren_ID"] . ') ' . $row["Name"] . '</option>';
         echo "\n";
     }
 } else {
