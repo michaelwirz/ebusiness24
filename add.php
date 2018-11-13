@@ -8,13 +8,13 @@ if (isset($_POST['submit'])) {
     echo $einkaufspreis;
     echo $verkaufspreis;
     $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
-    VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
+    VALUES ($name, $einkaufspreis, $verkaufspreis)";
     
-    if (mysqli_query($conn, $sql)) {
+    if (mysqli_query($connection, $sql)) {
         echo "New record created successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    mysqli_close($conn);
+        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+    mysqli_close($connection);
     }
 }
 ?>
