@@ -6,11 +6,11 @@ if (isset($_POST['submit'])) {
     $verkaufspreis = (float) $_POST['Verkaufspreis'];
     $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
     VALUES ('$name', '$einkaufspreis', '$verkaufspreis')";
-    $last_id = mysqli_insert_id($connection);
+ /*   $last_id = mysqli_insert_id($connection);
     $new_id = $last_id -9;
     $sql= "UPDATE ware 
     SET Waren_ID = '$new_id'
-    WHERE Waren_ID = '$last_id'";
+    WHERE Waren_ID = '$last_id'"; */
 }
 ?>
 
