@@ -1,3 +1,9 @@
+<script>
+    // Material Select Initialization
+$(document).ready(function() {
+ $('.mdb-select').materialSelect();
+});</script>
+
 <div class="col-md-5">
     <div class="card">
         <div class="card-header card-header-danger">
@@ -18,9 +24,4 @@
     include 'removed.php';
 ?>
 
-<script>
-    // Material Select Initialization
-$(document).ready(function() {
- $('.mdb-select').materialSelect();
-});</script>
 
