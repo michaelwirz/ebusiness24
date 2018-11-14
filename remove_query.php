@@ -12,6 +12,5 @@ if ($result->num_rows > 0) {
 } else {
    echo "<option selected>kein Warentyp angelegt!</option>\n"; 
 }
-mysqli_close($connection);
     
 ?>
