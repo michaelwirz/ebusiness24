@@ -1,6 +1,3 @@
-<?php 
-    include 'removed.php';
-?>
 <div class="col-md-5">
     <div class="card">
         <div class="card-header card-header-danger">
@@ -24,6 +21,9 @@
         </div>
     </div>
 </div>
+<?php 
+    include 'removed.php';
+?>
 
 
            
