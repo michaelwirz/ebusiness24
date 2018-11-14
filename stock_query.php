@@ -5,9 +5,6 @@ $result = $connection->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        
-        string number_format ( float $number , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." )
-        
         $id = $row["Waren_ID"];
         $name = $row["Name"];
         $ekpreis = string number_format ( float $row["Einkaufspreis"] , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
