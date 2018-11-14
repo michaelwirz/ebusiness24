@@ -43,7 +43,6 @@
                     </div>
                 </div>
             </div>
-        </div>
           
         <footer class="footer">
                 <div class="container-fluid">
@@ -65,7 +64,7 @@
                   </div>
                 </div>
         </footer>
-    </div>
+        </div></div>
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
