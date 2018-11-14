@@ -22,6 +22,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row justify-content-center">
+                    <div class="col-md-6">
                     <div class="card">
                         <div class="card-header card-header-success">
                             <h4 class="card-title">Anmelden</h4>
@@ -36,6 +37,7 @@
                                 <input type="submit" name="anmelden"  class="btn btn-info btn-block my-4" value="Anmelden">
                             </form>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
