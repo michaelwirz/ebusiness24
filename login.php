@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
-
+<?php
+    require('../vendor/autoload.php');
+?>
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
