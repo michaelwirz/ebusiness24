@@ -4,22 +4,30 @@
 <div class="col-md-5">
     <div class="card">
         <div class="card-header card-header-danger">
-            <h4 class="card-title">Warentyp löschen</h4>
+            <h4 class="card-title">Warentyp entfernen</h4>
             <p class="card-category">Hier kann noch ein Text hin</p>
         </div>
         <div class="card-body">
-            <div class="input-group">
-                <select class="custom-select bmd-form-group-sm" name="remove" action="dashboard.php" method="post">
+            <!-- <div class="input-group">
+                <select class="custom-select bmd-form-group-sm">
                     <?php include 'remove_query.php' ;?>
                 </select>
                 <div class="input-group-append">
                     <button class="btn btn-info input-group-btn" type="button">Löschen</button>
                 </div>
-            </div>
+            </div>-->
+            <form role="form" method="post" action="dashboard.php">
+                <select name="Anrede">
+                    <?php include 'remove_query.php' ;?>
+                </select>
+                <input type="submit" name="remove" value="Entfernen">
+            </form>
         </div>
     </div>
 </div>
 
+
+           
 
 <!--
 <div class="dropdown bootstrap-select">
@@ -52,7 +60,7 @@
         </div>
 <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Löschen </button>
     </div> 
-<input class="form-control" aria-label="Text input with dropdown button"> 
+<input class="form-control" aria-label="label" name="remove" action="dashboard.php" method="post"> 
 </div>
 
 
