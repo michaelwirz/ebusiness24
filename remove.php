@@ -13,10 +13,10 @@
                 </div>
             </div>-->
             <form role="form" method="post" action="dashboard.php">
-                <select name="Anrede">
+                <select name="remove">
                     <?php include 'remove_query.php' ;?>
                 </select>
-                <input type="submit" name="remove" value="Entfernen">
+                <input type="submit" value="Entfernen">
             </form>
         </div>
     </div>
