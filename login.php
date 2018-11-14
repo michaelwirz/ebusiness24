@@ -21,7 +21,7 @@
 
 <body class="">
     <div class="wrapper">
-        <div class="main-panel-no-sidebar">
+        <div class="main-panel--no-sidebar">
             <div class="content">
                 <div class="container-fluid">
                     <div class="row justify-content-center">

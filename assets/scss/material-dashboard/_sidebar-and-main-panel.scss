@@ -387,9 +387,11 @@
     }
 }
 
-.main-panel-no-sidebar{
-    @extend .main-panel;
-    width: 100%;
+.main-panel--no-sidebar{
+    position: relative;
+    float: right;
+    width: 100%
+    @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
     
     > .content{
         margin-top: 70px;
