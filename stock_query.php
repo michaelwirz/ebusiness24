@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
         $gesamtwert = $gesamtwert + $warenwert;
         echo '<tbody>
                     <tr>
-                      <th scope="row">
+                      <th class="text-center scope="row">
                         ' . $id . '
                       </th>
                       <td>
@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
                     </tr>
                 </tbody>';
     } echo '<tr>
-                <th scope="row"></th>
+                <th  class="text-right" scope="row"></th>
                 <td></td>
                 <td class="text-right"></td>
                 <td class="text-right"></td>
@@ -44,18 +44,21 @@ if ($result->num_rows > 0) {
 } else {
    echo '<tbody>
                 <tr>
-                  <td>
+                  <tn class="text-center">
+                    –
+                  </th>
+                  <td class="text-center">
                     –
                   </td>
-                  <td>
+                  <td class="text-right">
                     –
                   </td>
-                  <td>
+                  <td class="text-right">
                     –
                   </td>
-                  <td>
+                  <th class="text-right">
                     –
-                  </td>
+                  </th>
                 </tr>
             </tbody>'; 
 }

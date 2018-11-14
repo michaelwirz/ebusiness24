@@ -35,19 +35,19 @@ echo $datum;
                   <div class="table-responsive">
                     <table class="table">
                       <thead class=" text-primary">
-                        <th scope="col">
+                        <th class="text-center" scope="col">
                           ID
                         </th>
                         <th scope="col">
                           Produktname
                         </th>
-                        <th scope="col">
+                        <th class="text-center" scope="col">
                           Einkaufspreis
                         </th>
-                        <th scope="col">
+                        <th class="text-center" scope="col">
                           Verkaufspreis
                         </th>
-                        <th scope="col">
+                        <th class="text-center" scope="col">
                           Warenwert
                         </th>
                       </thead>
