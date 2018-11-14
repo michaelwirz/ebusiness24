@@ -387,6 +387,35 @@
     }
 }
 
+.no-sidebar-main-panel{
+    position: relative;
+    float: right;
+    @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+
+    > .content{
+        margin-top: 70px;
+        padding: 30px 15px;
+        height: 100vh;
+    }
+
+    > .footer{
+        border-top: 1px solid #e7e7e7;
+    }
+
+    > .navbar{
+        margin-bottom: 0;
+    }
+
+    .header{
+        margin-bottom: 30px;
+
+        .title{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
 .perfect-scrollbar-on{
     .sidebar,
     .main-panel{
