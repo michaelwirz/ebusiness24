@@ -19,7 +19,7 @@
 
 <body class="">
     <div class="wrapper">
-        <div class="no-sidebar-main-panel">
+        <div class="main-panel-no-sidebar">
             <div class="content">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
