@@ -3,6 +3,7 @@ if (isset($_POST['remove'])) {
     require_once('db_connect.php');
     $remove_waren_id = intval($_POST['remove']);
     echo $remove_waren_id;
+    echo $connection;
    // $sql = "SELECT * INTO ware_removed
    // FROM ware
    // WHERE Waren_ID = '$remove_waren_id'";
