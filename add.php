@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submit'])) {
+if (isset($_POST['add'])) {
     require_once('db_connect.php');
     $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
                         </div>
                     </div>
                 </div>
-                <input type="submit" name="submit" class="btn btn-info pull-right" value="HINZUFÜGEN">
+                <input type="submit" name="add" class="btn btn-info pull-right" value="HINZUFÜGEN">
                 <div class="clearfix"></div>
             </form>
         </div>
