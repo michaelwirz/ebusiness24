@@ -7,8 +7,10 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $id = $row["Waren_ID"];
         $name = $row["Name"];
-        $ekpreis = string number_format ( float $row["Einkaufspreis"] , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
-        $vkpreis = string number_format ( float  $row["Verkaufspreis"] , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
+        $ekpreis = floatval($row["Einkaufspreis"])
+        $vkpreis = floatval($row["Verkaufspreis"])
+        $ekpreis = string number_format ( float $ekpreis , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
+        $vkpreis = string number_format ( float $vkpreis , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
         echo "
 <tbody>
     <tr>
