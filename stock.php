@@ -47,6 +47,9 @@ echo $datum;
                         <th scope="col">
                           Verkaufspreis
                         </th>
+                        <th scope="col">
+                          Warenwert
+                        </th>
                       </thead>
                       <?php include 'stock_query.php' ?>
                     </table>

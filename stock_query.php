@@ -21,25 +21,25 @@ if ($result->num_rows > 0) {
                       <td>
                         ' . $name . '
                       </td>
-                      <td class="td-price">
+                      <td class="text-right">
                         ' . $ekpreis . ' €' . '
                       </td>
-                      <td class="td-price">
+                      <td class="text-right">
                         ' . $vkpreis . ' €' . '
                       </td>
-                      <td class="td-total">
+                      <th class="text-right">
                         ' . $warenwert . ' €' . '
-                      </td>
+                      </th>
                     </tr>
                 </tbody>';
     } echo '<tr>
                 <th scope="row"></th>
                 <td></td>
-                <td class="td-price"></td>
-                <td class="td-price"></td>
-                <td class="td-total">
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <th class="text-right">
                 ' . $gesamtwert . ' €' . '
-                </td>
+                </th>
             </tr>';
 } else {
    echo '<tbody>
