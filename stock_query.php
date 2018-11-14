@@ -9,8 +9,8 @@ if ($result->num_rows > 0) {
         $name = $row["Name"];
         $ekpreis = floatval($row["Einkaufspreis"]);
         $vkpreis = floatval($row["Verkaufspreis"]);
-        $ekpreis = string number_format ( float $ekpreis , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
-        $vkpreis = string number_format ( float $vkpreis , int $decimals = 2 , string $dec_point = "," , string $thousands_sep = "." );
+        $ekpreis = number_format ($ekpreis , $decimals = 2 , $dec_point = "," , $thousands_sep = "." );
+        $vkpreis = number_format ($vkpreis , $decimals = 2 , $dec_point = "," , $thousands_sep = "." );
         echo "
 <tbody>
     <tr>
