@@ -16,16 +16,16 @@ if ($result->num_rows > 0) {
 <tbody>
     <tr>
       <td>
-        " . $id. "
+        " . $id . "
       </td>
       <td>
-        " . $name. "
+        " . $name . "
       </td>
       <td>
-        " . $ekpreis. "
+        " . $ekpreis . "
       </td>
       <td>
-        " . $vkpreis. "
+        " . $vkpreis . "
       </td>
     </tr>
 </tbody>";
