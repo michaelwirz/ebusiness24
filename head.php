@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <?php
-  require('../vendor/autoload.php');  
+  require('vendor/autoload.php');  
 ?>
 <head>
   <meta charset="utf-8" />
