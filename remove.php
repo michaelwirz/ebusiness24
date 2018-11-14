@@ -13,7 +13,7 @@
                 </div>
             </div>-->
             <form role="form" method="post" action="dashboard.php">
-                <select name="remove">
+                <select class="mdb-select md-form" name="remove">
                     <?php include 'remove_query.php' ;?>
                 </select>
                 <input type="submit" value="Entfernen">

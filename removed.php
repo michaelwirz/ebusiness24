@@ -7,10 +7,12 @@ if (isset($_POST['remove'])) {
    // FROM ware
    // WHERE Waren_ID = '$remove_waren_id'";
     $sql = "DELETE FROM ware WHERE Waren_ID = '$remove_waren_id'";
+/*
     if (mysqli_query($connection, $sql)) {
         echo "Record removed successfully";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+*/
     mysqli_close($connection);
     }
 }
