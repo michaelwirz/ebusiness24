@@ -10,7 +10,6 @@
         <div class="card-body">
             <!-- <div class="input-group">
                 <select class="custom-select bmd-form-group-sm">
-                    <?php include 'remove_query.php' ;?>
                 </select>
                 <div class="input-group-append">
                     <button class="btn btn-info input-group-btn" type="button">Löschen</button>
