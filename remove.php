@@ -6,10 +6,10 @@
         </div>
         <div class="card-body">
             <form role="form" method="post" action="dashboard.php">
-                <select name="remove">
+                <select name="remove" class="browser-default custom-select">
                     <?php include 'remove_query.php' ;?>
                 </select>
-                <input type="submit" value="Entfernen">
+                <input type="submit" value="ETNFERNEN" class="btn btn-info pull-right">
             </form>
         </div>
     </div>
