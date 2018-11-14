@@ -7,11 +7,12 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $id = $row["Waren_ID"];
         $name = $row["Name"];
+        $menge = 5;
         $ekpreis = floatval($row["Einkaufspreis"]);
         $vkpreis = floatval($row["Verkaufspreis"]);
         $ekpreis = number_format ($ekpreis , $decimals = 2 , $dec_point = "," , $thousands_sep = "." );
         $vkpreis = number_format ($vkpreis , $decimals = 2 , $dec_point = "," , $thousands_sep = "." );
-        $warenwert = 5;
+        $warenwert = $ekpreis * $menge;
         $gesamtwert = $gesamtwert + $warenwert;
         echo '<tbody>
                     <tr>
@@ -22,13 +23,16 @@ if ($result->num_rows > 0) {
                         ' . $name . '
                       </td>
                       <td class="text-right">
-                        ' . $ekpreis . ' €' . '
+                        ' . $menge . '
                       </td>
                       <td class="text-right">
-                        ' . $vkpreis . ' €' . '
+                        ' . $ekpreis . ' €  ' . '
+                      </td>
+                      <td class="text-right">
+                        ' . $vkpreis . ' €  ' . '
                       </td>
                       <th class="text-right">
-                        ' . $warenwert . ' €' . '
+                        ' . $warenwert . ' €  ' . '
                       </th>
                     </tr>
                 </tbody>';
@@ -37,8 +41,9 @@ if ($result->num_rows > 0) {
                 <td></td>
                 <td class="text-right"></td>
                 <td class="text-right"></td>
+                <td class="text-right"></td>
                 <th class="text-right">
-                ' . $gesamtwert . ' €' . '
+                ' . $gesamtwert . ' €  ' . '
                 </th>
             </tr>';
 } else {

@@ -42,6 +42,9 @@ echo $datum;
                           Produktname
                         </th>
                         <th class="text-center" scope="col">
+                          Menge
+                        </th>
+                        <th class="text-center" scope="col">
                           Einkaufspreis
                         </th>
                         <th class="text-center" scope="col">
