@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['remove'])) {
-    require_once('db_connect.php');
+    require('db_connect.php');
     $remove_waren_id = intval($_POST['remove']);
     echo $remove_waren_id;
    // $sql = "SELECT * INTO ware_removed
