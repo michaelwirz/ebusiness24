@@ -22,13 +22,13 @@ if ($result->num_rows > 0) {
                         ' . $name . '
                       </td>
                       <td class="td-price">
-                        ' . $ekpreis . '
+                        ' . $ekpreis . ' €' . '
                       </td>
                       <td class="td-price">
-                        ' . $vkpreis . '
+                        ' . $vkpreis . ' €' . '
                       </td>
                       <td class="td-total">
-                        ' . $warenwert . '
+                        ' . $warenwert . ' €' . '
                       </td>
                     </tr>
                 </tbody>';
@@ -38,9 +38,9 @@ if ($result->num_rows > 0) {
                 <td class="td-price"></td>
                 <td class="td-price"></td>
                 <td class="td-total">
-                ' . $gesamtwert . '
+                ' . $gesamtwert . ' €' . '
                 </td>
-            </tr>'
+            </tr>';
 } else {
    echo '<tbody>
                 <tr>
