@@ -35,16 +35,16 @@ echo $datum;
                   <div class="table-responsive">
                     <table class="table">
                       <thead class=" text-primary">
-                        <th>
+                        <th scope="col">
                           ID
                         </th>
-                        <th>
+                        <th scope="col">
                           Produktname
                         </th>
-                        <th>
+                        <th scope="col">
                           Einkaufspreis
                         </th>
-                        <th>
+                        <th scope="col">
                           Verkaufspreis
                         </th>
                       </thead>

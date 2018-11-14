@@ -11,42 +11,53 @@ if ($result->num_rows > 0) {
         $vkpreis = floatval($row["Verkaufspreis"]);
         $ekpreis = number_format ($ekpreis , $decimals = 2 , $dec_point = "," , $thousands_sep = "." );
         $vkpreis = number_format ($vkpreis , $decimals = 2 , $dec_point = "," , $thousands_sep = "." );
-        echo "
-<tbody>
-    <tr>
-      <td>
-        " . $id . "
-      </td>
-      <td>
-        " . $name . "
-      </td>
-      <td>
-        " . $ekpreis . "
-      </td>
-      <td>
-        " . $vkpreis . "
-      </td>
-    </tr>
-</tbody>";
-    }
+        $warenwert = 5;
+        $gesamtwert = $gesamtwert + $warenwert;
+        echo '<tbody>
+                    <tr>
+                      <th scope="row">
+                        ' . $id . '
+                      </th>
+                      <td>
+                        ' . $name . '
+                      </td>
+                      <td class="td-price">
+                        ' . $ekpreis . '
+                      </td>
+                      <td class="td-price">
+                        ' . $vkpreis . '
+                      </td>
+                      <td class="td-total">
+                        ' . $warenwert . '
+                      </td>
+                    </tr>
+                </tbody>';
+    } echo '<tr>
+                <th scope="row"></th>
+                <td></td>
+                <td class="td-price"></td>
+                <td class="td-price"></td>
+                <td class="td-total">
+                ' . $gesamtwert . '
+                </td>
+            </tr>'
 } else {
-   echo "
-<tbody>
-    <tr>
-      <td>
-        –
-      </td>
-      <td>
-        –
-      </td>
-      <td>
-        –
-      </td>
-      <td>
-        –
-      </td>
-    </tr>
-</tbody>"; 
+   echo '<tbody>
+                <tr>
+                  <td>
+                    –
+                  </td>
+                  <td>
+                    –
+                  </td>
+                  <td>
+                    –
+                  </td>
+                  <td>
+                    –
+                  </td>
+                </tr>
+            </tbody>'; 
 }
 mysqli_close($connection);  
     
