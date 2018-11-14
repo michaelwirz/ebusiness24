@@ -1,9 +1,3 @@
-<script>
-    // Material Select Initialization
-$(document).ready(function() {
- $('.mdb-select').materialSelect();
-});</script>
-
 <div class="col-md-5">
     <div class="card">
         <div class="card-header card-header-danger">
@@ -12,7 +6,7 @@ $(document).ready(function() {
         </div>
         <div class="card-body">
             <form role="form" method="post" action="dashboard.php">
-                <select class="mdb-select md-form" name="remove">
+                <select name="remove">
                     <?php include 'remove_query.php' ;?>
                 </select>
                 <input type="submit" value="Entfernen">
