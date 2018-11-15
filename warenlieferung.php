@@ -1,3 +1,8 @@
+<?php 
+include 'head.php';
+$page = "Lieferung";
+?>
+
 <?php
 
 if (isset($_POST['eintragen'])) {
@@ -18,7 +23,15 @@ if (isset($_POST['eintragen'])) {
 }
 ?>
 
-
+<body class="">
+  <div class="wrapper ">
+        <?php include 'sidebar.php'; ?>
+    </div>
+    <div class="main-panel">
+      <?php include 'navbar.php'; ?>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
 
 
 
@@ -60,8 +73,9 @@ if (isset($_POST['eintragen'])) {
                         </div>
                     </div>
 							</div>
-                <input type="submit" value="ETNFERNEN" class="btn btn-info pull-right">
-            </form>
+                <input type="submit" value="EINTRAGEN" class="btn btn-info pull-right">
+            </div></form>
         </div>
     </div>
 </div>
+<?php include 'footer.php' ?></div>
