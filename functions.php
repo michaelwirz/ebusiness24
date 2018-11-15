@@ -1,7 +1,7 @@
 <?php
 
 //füge neuen Warentypen zum Lager hinzu
-function AddNewProduct {
+function AddNewProduct() {
     $name = htmlspecialchars($_POST['Name']); 
     $einkaufspreis = (float) $_POST['Einkaufspreis'];
     $verkaufspreis = (float) $_POST['Verkaufspreis'];
