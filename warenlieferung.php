@@ -6,8 +6,13 @@ $page = "Lieferung";
 <?php
 
 if (isset($_POST['eintragen'])) {
-    require_once ('db_connect.php');
-    //function, die die aktuelle Menge per SQL-Query abruft -> $gelagerte_menge
+    require_once ('db_connect.php');}
+if (require_once ('db_connect.php))
+//function, die die aktuelle Menge per SQL-Query abruft -> $gelagerte_menge:
+	{$gelagerte_menge = $gelagerte_menge + $gelieferte_menge;
+	$sql= "UPDATE ware SET Menge= $gelagerte_menge";
+	echo "$gelagerte_menge";}
+    
     $id_lieferung = ($_POST['Waren_ID']); 
     $einkaufspreis_lieferung = (float) $_POST['gelieferte_menge'];
     // $gelagerte_menge = $gelagerte_menge + $gelieferte_menge
