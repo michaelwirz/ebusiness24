@@ -7,13 +7,17 @@ $page = "Lieferung";
 
 if (isset($_POST['eintragen'])) {
     require_once ('db_connect.php');
-    //function, die die aktuelle Menge per SQL-Query abruft -> $gelagerte_menge
+//function, die die aktuelle Menge per SQL-Query abruft -> $gelagerte_menge:
+	$gelagerte_menge = $gelagerte_menge + $gelieferte_menge;
+	$sql= "UPDATE Ware SET Menge= '$gelagerte_menge'";
+	echo "$gelagerte_menge";
     $id_lieferung = ($_POST['Waren_ID']); 
     $einkaufspreis_lieferung = (float) $_POST['gelieferte_menge'];
     // $gelagerte_menge = $gelagerte_menge + $gelieferte_menge
     /* $sql= "INSERT INTO ware (Name, Einkaufspreis, Verkaufspreis) 
     VALUES ('$name', '$einkaufspreis', '$verkaufspreis')"; */
     // 
+				
     if (mysqli_query($connection, $sql)) {
 //       echo "New record created successfully";
     } else {
@@ -65,6 +69,7 @@ if (isset($_POST['eintragen'])) {
 								}
 								 ?>   
 								 </select>
+		    </div>
 								 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -78,4 +83,9 @@ if (isset($_POST['eintragen'])) {
         </div>
     </div>
 </div>
+	      </div>
+	    </div>
+	</div>
+	</div>
+
 <?php include 'footer.php' ?></div>
